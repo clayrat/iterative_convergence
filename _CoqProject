@@ -1,0 +1,19 @@
+-R . iter_conv
+
+-arg -w -arg -projection-no-head-constant
+-arg -w -arg -redundant-canonical-projection
+-arg -w -arg -notation-overridden
+-arg -w -arg +duplicate-clear
+-arg -w -arg +non-primitive-record
+-arg -w -arg +undeclared-scope
+-arg -w -arg -deprecated-hint-without-locality
+-arg -w -arg -deprecated-ident-entry
+-arg -w -arg -ambiguous-paths
+-arg -w -arg +implicit-core-hint-db
+
+theories/complex_mat_vec_prop.v
+theories/matrix_norm.v
+theories/iter_necessity.v
+theories/iter_convergence.v
+theories/gauss_seidel.v
+theories/jacobi.v

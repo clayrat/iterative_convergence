@@ -11,12 +11,11 @@ We formally prove the following in Coq:
 # Dependencies:
 
 All the developments have been done in Coq 8.12.0. To successfully compile the code, following dependencies are required:
-- `mathcomp 1.12.0 or later` 
-- `mathcomp-analysis 0.3.7`
+- `mathcomp 1.12.0 or later`
+- `mathcomp-analysis 0.5.0 or later`
 - `coquelicot 3.2.0`
 - `coqeal 1.0.5 or later`
 -  `mathcomp real-closed 1.1.2 or later`
-- To install the matrix canonical forms, clone: `https://github.com/coq-community/matrix_canonical_forms.git`
 
 # Building and installing instructions
 
@@ -27,5 +26,5 @@ cd iterative_convergence
 make
 make install
 ```
-All the files are installed in the `user-contrib/iterative_convergence` folder 
+All the files are installed in the `user-contrib/iterative_convergence` folder
 
