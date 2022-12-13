@@ -2,13 +2,11 @@
 
 Require Import Reals Psatz R_sqrt R_sqr.
 From mathcomp Require Import all_algebra all_ssreflect ssrnum bigop ssrnat.
-From mathcomp.analysis Require Import boolp Rstruct classical_sets signed
-     topology normedtype landau sequences.
-Require Import Coquelicot.Lim_seq.
-Require Import Coquelicot.Rbar.
-Require Import Coquelicot.Hierarchy Coquelicot.Lub.
 From mathcomp Require Import mxalgebra matrix all_field vector.
-From CoqEAL Require Import mxstructure ssrcomplements jordan similar closed_poly frobenius_form.
+From mathcomp.analysis Require Import boolp Rstruct classical_sets signed.
+From Coquelicot Require Import Lim_seq Rbar Hierarchy Lub.
+Require Import complex_mat_vec_prop.
+Require Import iter_necessity iter_convergence.
 
 Set Implicit Arguments.
 Unset Strict Implicit.
@@ -16,18 +14,14 @@ Unset Printing Implicit Defensive.
 
 Open Scope R_scope.
 Open Scope ring_scope.
+Open Scope classical_set_scope.
 
 Delimit Scope ring_scope with Ri.
 Delimit Scope R_scope with Re.
 
 Import Order.TTheory GRing.Theory Num.Def Num.Theory.
 
-Open Scope classical_set_scope.
-
-From mathcomp Require Import complex.
-Require Import complex_mat_vec_prop.
-Require Import iter_necessity iter_convergence.
-
+From mathcomp.real_closed Require Import complex.
 Import ComplexField.
 
 (** Definition of a symmetric matrix **)

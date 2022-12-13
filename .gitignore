@@ -14,3 +14,4 @@
 Makefile.coq
 Makefile.coq.conf
 *~
+.nra.cache
