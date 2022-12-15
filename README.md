@@ -12,7 +12,7 @@ We formally prove the following in Coq:
 
 All the developments have been done in Coq 8.12.0. To successfully compile the code, following dependencies are required:
 - `mathcomp 1.12.0 or later`
-- `mathcomp-analysis 0.5.0 or later`
+- `mathcomp-analysis 0.6.0 or later`
 - `coquelicot 3.2.0`
 - `coqeal 1.0.5 or later`
 -  `mathcomp real-closed 1.1.2 or later`

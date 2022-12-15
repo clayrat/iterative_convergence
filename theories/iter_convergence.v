@@ -1,7 +1,9 @@
 Require Import Reals Psatz R_sqrt R_sqr.
 From mathcomp Require Import all_algebra all_ssreflect ssrnum bigop.
 From mathcomp Require Import mxalgebra matrix all_field.
-From mathcomp.analysis Require Import boolp Rstruct classical_sets signed.
+From mathcomp.real_closed Require Import complex.
+From mathcomp.classical Require Import boolp classical_sets.
+From mathcomp.analysis Require Import Rstruct signed.
 From Coquelicot Require Import Lim_seq Rbar Hierarchy Lub.
 Require Import complex_mat_vec_prop iter_necessity matrix_norm.
 
@@ -9,17 +11,14 @@ Set Implicit Arguments.
 Unset Strict Implicit.
 Unset Printing Implicit Defensive.
 
+Import Order.TTheory GRing.Theory Num.Def Num.Theory ComplexField complex.
+
 Open Scope R_scope.
 Open Scope ring_scope.
 Open Scope classical_set_scope.
 
 Delimit Scope ring_scope with Ri.
 Delimit Scope R_scope with Re.
-
-Import Order.TTheory GRing.Theory Num.Def Num.Theory.
-
-From mathcomp.real_closed Require Import complex.
-Import ComplexField.
 
 (** - (A B) = A * (-B) **)
 Lemma Mopp_mult_r:
